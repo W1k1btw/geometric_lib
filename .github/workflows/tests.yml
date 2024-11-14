@@ -1,17 +1,15 @@
 name: Run Tests
 
 on:
-  on:
   push:
     branches:
-      - "master"
-      - "develop"
-      - "feat/tests"
+      - master
+      - develop
+      - feat/tests
   pull_request:
     branches:
-      - "master"
-      - "develop"
-
+      - master
+      - develop
 
 jobs:
   test:
