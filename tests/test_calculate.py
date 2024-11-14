@@ -1,5 +1,5 @@
 import pytest
-from geometric_lib.calculate import calc
+from .calculate import calc
 
 def test_calc_area():
     assert calc("area", "square", 4) == 16
