@@ -1,5 +1,5 @@
 import pytest
-from triangle import triangle_area, triangle_perimeter
+from geometric_lib.triangle import triangle_area, triangle_perimeter
 
 def test_triangle_area():
     assert triangle_area(3, 4, 5) == 6
