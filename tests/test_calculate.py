@@ -2,7 +2,7 @@ import pytest
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../geometric_lib')))
-from .calculate import calc
+from geometric_lib.calculate import calc
 
 def test_calc_area():
     assert calc("area", "square", 4) == 16
