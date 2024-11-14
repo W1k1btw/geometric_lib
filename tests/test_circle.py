@@ -1,5 +1,5 @@
 import pytest
-from geometric_lib.circle import circle_area, circle_perimeter
+from .circle import circle_area, circle_perimeter
 
 def test_circle_area():
     assert pytest.approx(circle_area(3), 0.01) == 28.27
