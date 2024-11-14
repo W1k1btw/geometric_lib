@@ -1,5 +1,5 @@
 import pytest
-from square import square_area, square_perimeter
+from geometric_lib.square.py import square_area, square_perimeter
 
 def test_square_area():
     assert square_area(4) == 16
