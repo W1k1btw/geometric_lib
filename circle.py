@@ -1,9 +1,7 @@
-import math  # Импортируем модуль math для доступа к математическим функциям и константам
+import math
 
-# Функция для вычисления площади круга
-def area(r):
-    return math.pi * r * r  # Площадь круга вычисляется по формуле: π * r²
+def circle_area(r):
+    return math.pi * r * r
 
-# Функция для вычисления периметра (длиной окружности) круга
-def perimeter(r):
-    return 2 * math.pi * r  # Периметр круга вычисляется по формуле: 2 * π * r
+def circle_perimeter(r):
+    return 2 * math.pi * r
