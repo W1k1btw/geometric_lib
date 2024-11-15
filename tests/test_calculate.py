@@ -1,7 +1,7 @@
 import pytest
 import sys
 import os
-ys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from geometric_lib.calculate import calc
 
 def test_calc_area():
