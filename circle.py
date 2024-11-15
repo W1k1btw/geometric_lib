@@ -1,7 +1,7 @@
 import math
 
-def circle_area(r):
+def area(r):
     return math.pi * r * r
 
-def circle_perimeter(r):
+def perimeter(r):
     return 2 * math.pi * r
