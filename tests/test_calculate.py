@@ -12,4 +12,5 @@ def test_calc_perimeter():
 
 def test_invalid_operation():
     with pytest.raises(ValueError, match="Unsupported operation"):
-        calc("circle", "perimeter", [3])
+        calc("circle", "volume", [3])
+
