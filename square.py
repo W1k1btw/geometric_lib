@@ -1,5 +1,5 @@
-def square_area(a):
+def area(a):
     return a * a
 
-def square_perimeter(a):
+def perimeter(a):
     return 4 * a
