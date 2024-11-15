@@ -1,7 +1,6 @@
-# Функция для вычисления полупериметра треугольника
-def area(a, b, c):
-    return (a + b + c) / 2  # Полупериметр треугольника вычисляется по формуле: (a + b + c) / 2
+def triangle_area(a, b, c):
+    s = (a + b + c) / 2
+    return (s * (s - a) * (s - b) * (s - c)) ** 0.5
 
-# Функция для вычисления периметра треугольника
-def perimeter(a, b, c):
-    return a + b + c  # Периметр треугольника вычисляется по формуле: a + b + c
+def triangle_perimeter(a, b, c):
+    return a + b + c
