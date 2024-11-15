@@ -4,7 +4,6 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from geometric_lib.calculate import calc
 
-# Функция calc ожидает аргументы: (функция, фигура, размеры). Пример: calc("area", "square", [4])
 def test_calc_area():
     assert calc("square", "area", [4]) == 16
 
@@ -13,4 +12,5 @@ def test_calc_perimeter():
 
 def test_invalid_operation():
     with pytest.raises(ValueError, match="Unsupported operation"):
-        calc("cube", "volume", [3])
+        calc("circle", "volume", [3])
+
