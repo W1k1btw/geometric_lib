@@ -1,7 +1,5 @@
-# Функция для вычисления площади квадрата
-def area(a):
-    return a * a  # Площадь квадрата вычисляется по формуле: a²
+def square_area(a):
+    return a * a
 
-# Функция для вычисления периметра квадрата
-def perimeter(a):
-    return 4 * a  # Периметр квадрата вычисляется по формуле: 4 * a
+def square_perimeter(a):
+    return 4 * a
