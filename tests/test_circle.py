@@ -1,6 +1,7 @@
 import pytest
 from circle import area, perimeter
 
+
 def test_area():
     assert area(1) == pytest.approx(3.14159, 0.0001)
     assert area(2) == pytest.approx(12.56637, 0.0001)
@@ -8,7 +9,7 @@ def test_area():
 
 def test_area_invalid():
     with pytest.raises(TypeError):
-        area("not a number")
+        area("Not a number.")
 
 
 def test_perimeter():
