@@ -20,4 +20,3 @@ def test_perimeter():
 def test_perimeter_invalid():
     with pytest.raises(TypeError):
         perimeter("Not a number.")
-
