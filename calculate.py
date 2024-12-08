@@ -1,6 +1,7 @@
 import circle  # noqa: F401
 import square  # noqa: F401
 
+
 figs = ["circle", "square"]
 funcs = ["perimeter", "area"]
 
