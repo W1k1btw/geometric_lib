@@ -28,4 +28,3 @@ def test_perimeter_invalid():
         perimeter(3, "Not a number.", 5)
     with pytest.raises(TypeError):
         perimeter(3, 4, "Not a number.")
-
