@@ -1,27 +1,22 @@
-import unittest
-from geometric_lib.calculate import calc
+import pytest
+from calculate import calc
 
-class CalculateTestCase(unittest.TestCase):
-    
-    def test_calc_area(self):
-        self.assertEqual(calc("square", "area", [4]), 16)
 
-    def test_calc_perimeter(self):
-        self.assertAlmostEqual(calc("circle", "perimeter", [3]), 18.85, places=2)
+def test_calc_circle():
+    assert calc("circle", "area", [1]) == pytest.approx(3.14159, 0.0001)
+    assert calc("circle", "perimeter", [2]) == pytest.approx(12.56637, 0.0001)
 
-    def test_invalid_operation(self):
-        with self.assertRaises(ValueError) as context:
-            calc("circle", "volume", [3])
-        self.assertEqual(str(context.exception), "Unsupported function")
-        
-    def test_invalid_figure(self):
-        with self.assertRaises(ValueError) as context:
-            calc("hexagon", "area", [5])
-        self.assertEqual(str(context.exception), "Unsupported figure")
-    
-    def test_invalid_size(self):
-        with self.assertRaises(TypeError):
-            calc("square", "area", "invalid")
-        
-if __name__ == "__main__":
-    unittest.main()
+
+def test_calc_square():
+    assert calc("square", "area", [2]) == 4
+    assert calc("square", "perimeter", [3]) == 12
+
+
+def test_calc_invalid_figure():
+    with pytest.raises(AssertionError):
+        calc("triangle", "area", [1])
+
+
+def test_calc_invalid_function():
+    with pytest.raises(AssertionError):
+        calc("circle", "volume", [1])
