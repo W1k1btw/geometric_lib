@@ -5,7 +5,6 @@ import square  # noqa: F401
 figs = ["circle", "square"]
 funcs = ["perimeter", "area"]
 
-
 def calc(fig, func, size):
     assert fig in figs
     assert func in funcs
