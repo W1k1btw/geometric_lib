@@ -3,13 +3,13 @@ name: Geometric Library Tests
 on:
   push:
     branches:
-      - master
-      - feat/tests
+      - main
+      - release
   pull_request:
     branches:
-      - master
+      - main
+      - release
       - develop
-      - feat/tests
 
 jobs:
   test:
